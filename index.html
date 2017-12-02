@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+<div class="headerthing  text-center jumbotron">
+		<h1>Amiga Quiz</h1>
+				</div>
+
+		
+
+
+
+<div id="body-container" class="container-fluid">
+
+
+<div class=row id="timerdiv">
+				<div class="col-md-5">
+				</div>
+    <div class="col-md-2" >
+		<div class="well well-sm text-center">
+		<h4>Time Remaining:</h4>
+		<p id="timer"></p>
+		</div>
+		
+		</div>
+</div>
+
+
+
+<div class="row">
+	
+	<div class="col-md-2"></div>
+
+	<div id="startdiv" class="col-md-8 center-block well well-lg text-center">
+		
+		
+
+		<button type="button" id="startbutton" class="stylebutton btn btn-default">Start</button>
+
+	</div>
+
+	<div class="col-md-2"></div>
+
+</div>
+
+<div class="row">
+	
+	<div class="col-md-2"></div>
+
+	<div id="middlediv" class="col-md-8 center-block well well-lg text-center">
+		
+		
+
+		
+
+	
+		<form id="answersdiv" action="index.html">
+			
+			<p>Where was the Commodore Amiga the most successful?<p>
+			
+			<p><input type="radio" name="question1" value="a">Eurpoe</input></p>
+
+			<p><input type="radio" name="question1" value="b">United States</input></p>
+
+			<p><input type="radio"  name="question1" value="c">China</input></p>
+
+			<p><input type="radio"  name="question1" value="d">Japan</input></p>
+
+			<p>What is the most successful version of the Commodore Amiga?</p>
+			
+			<p><input type="radio" name="question2" value="a">Amiga 500</input></p>
+
+			<p><input type="radio" name="question2" value="b">Amiga CD32</input></p>
+
+			<p><input type="radio" name="question2" value="c">Amiga 100</input></p>
+
+			<p><input type="radio" name="question2" value="d">Amiga 600</input></p>
+
+			<p>When was the Amiga first released?</p>
+
+			<p><input type="radio" name="question3" value="a">July 23, 1985</input></p>
+
+			<p><input type="radio" name="question3" value="b">May 23, 1985</input></p>
+
+			<p><input type="radio" name="question3" value="c">June 23,1985</input></p>
+
+			<p><input type="radio" name="question3" value="d">July 12,1985</input></p>
+			
+			
+
+
+		</form>
+
+		<button type="button" id="donebutton" class="stylebutton btn btn-default">Done</button>
+
+	</div>
+
+
+	<div class="col-md-2"></div>
+
+</div>
+
+<div class="row">
+	
+	<div class="col-md-2"></div>
+
+	<div id="totaldiv" class="col-md-8 well well-lg center-block text-center">
+		
+		
+
+		<p>Correct Answers : <span id="correct">0</span></p>
+
+		<p>Incorrect Answers : <span id="incorrect">0</span></p>
+
+		<p>Unanswered : <span id="unanswered">0</span></p>
+		<p id="winorlose"></p>
+
+	</div>
+
+	<div class="col-md-2"></div>
+
+</div>
+
+ </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
