@@ -53,32 +53,36 @@ function showMiddle (){
 
 //checks the answers
 
-function checkAnswers() {
+
+function checkAnswer() {
+
 $("input[type='radio']").each(function() {
     var name = $(this).attr("name");
-    if($("input:radio[name="+name+"]:checked").length == 0)
-  {
-    userInput.push("");  
-  } else {
-    if  ($(this).is(":checked")) 
-    userInswers.push($(this).val());
-  }
+    if($("input:radio[name="+name+"]:checked").length == 0){
+        userInput.push("");  
+    }else {
+        if  ($(this).is(":checked")) 
+        userInput.push($(this).val());
+    }
 });
 for(i=0; i < userInput.length; i++) {
 
-if (correctAnswers[i] == userInput[i]) {
+    if (correctAnswers[i] == userInput[i]) {
 
-correct++;
+        correct++;
 
-}else if (userInput[i] == "") {
+    }else if (userInput[i] == "") {
 
-unanswered++;
+        unanswered++;
 
-}else {
+    }else {
 
-incorrect++;
+        incorrect++;
 
-}}
+    }
+
+}
+
 
 //timer stuff
 
@@ -140,4 +144,4 @@ $("#donebutton").click(function(){
     gameOver()
 })
 
-})
+});
